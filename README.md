@@ -52,6 +52,10 @@ This project includes a Streamlit app for real-time parking lot detection. The a
     - Use a sample video provided in the app for testing.
     - Real-time detection of parking spaces using a mask overlay.
 
+### Deployed Streamlit App
+
+You can access the deployed Streamlit app using the following link: [Parking Lot Counter App](https://parking-lot-counter.streamlit.app).
+
 ## Future Improvements
 
 - Enhance the model's robustness by incorporating additional datasets with diverse parking lot images.
