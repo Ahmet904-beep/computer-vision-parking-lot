@@ -11,9 +11,10 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import tensorflow as tf
+import os
 
-MODEL_PATH = '../model/model.keras'
-
+#MODEL_PATH = '../model/model.keras'
+MODEL_PATH = os.path.join(os.path.dirname(__file__), '..', '..', 'model', 'model.keras')
 IMG_SIZE = (224, 224)
 
 # @st.cache_resource is used to cache the model loading function to avoid reloading it every time the page is refreshed.

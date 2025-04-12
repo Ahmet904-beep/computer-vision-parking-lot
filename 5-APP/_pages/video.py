@@ -16,9 +16,15 @@ import tempfile
 import shutil
 import os
 
-VIDEO_PATH = '../video/parking_1920_1080_loop.mp4'
-MODEL_PATH = '../model/model.keras'
-MASK_PATH = '../video/mask_1920_1080.png'
+#VIDEO_PATH = '../video/parking_1920_1080_loop.mp4'
+VIDEO_PATH = os.path.join(os.path.dirname(__file__), '..', '..', 'video', 'parking_1920_1080_loop.mp4')
+
+#MODEL_PATH = '../model/model.keras'
+MODEL_PATH = os.path.join(os.path.dirname(__file__), '..', '..', 'model', 'model.keras')
+
+#MASK_PATH = '../video/mask_1920_1080.png'
+MASK_PATH = os.path.join(os.path.dirname(__file__), '..', '..', 'video', 'mask_1920_1080.png')
+
 IMG_SIZE = (224, 224)
 
 # Load the model only once and cache it for performance
