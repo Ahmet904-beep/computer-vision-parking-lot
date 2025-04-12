@@ -1,14 +1,14 @@
 '''Parking Spot Detection App'''
 
 import streamlit as st
-import _pages.video as video
-import _pages.upload as upload
-import _pages.model_info as model_info
 
 # App configuration
 st.set_page_config(page_title="Parking Spot Detection", page_icon="🚗"
                    , initial_sidebar_state="collapsed")
 
+import _pages.video as video
+import _pages.upload as upload
+import _pages.model_info as model_info
 
 # App background
 def set_background_color(color):
